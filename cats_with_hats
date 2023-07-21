@@ -1,0 +1,19 @@
+def distribute_hats(n_cats, n_rounds) -> list:
+    cats = [False] * n_cats
+    cats_in_hats = []
+
+    for round_number in range(1, n_rounds + 1):
+        for cat_number in range(round_number, n_cats + 1, round_number):
+            cats[cat_number - 1] = not cats[cat_number - 1]
+
+    for cat_number, has_hat in enumerate(cats):
+        if has_hat:
+            cats_in_hats.append(cat_number + 1)
+
+    return cats_in_hats
+
+
+n_cats = int(input("Enter the number of cats: "))
+n_rounds = int(input("Enter the number of rounds: "))
+cats_in_hats = distribute_hats(n_cats, n_rounds)
+print("The number of cats left with hats:", cats_in_hats)
