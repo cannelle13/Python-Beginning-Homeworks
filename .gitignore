@@ -10,4 +10,4 @@ venv.bak/
 __pycache__/
 
 # Ignore folders
-Task2/venv_name
+venv_name
