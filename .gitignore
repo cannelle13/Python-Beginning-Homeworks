@@ -8,3 +8,6 @@ venv.bak/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
+
+# Ignore folders
+/Task2/venv_name
