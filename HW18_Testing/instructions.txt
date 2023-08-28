@@ -1,0 +1,11 @@
+Explanation: Learning to run files from the root directory.
+
+1) To run `bank.py` file execute the command:
+    python3 src/bank.py
+
+2) To run `test_bank.py` file execute the command:
+    python3 tests/test_bank.py
+
+    a) In cace if we have several test files in `tests` folder and want to execute them all:
+        (list all the file names in command)
+        python3 -m unittest tests.test_bank tests.test_account
