@@ -3,9 +3,9 @@ class Country:
         self.name = name
         self.population = population
 
-    def add(self, other_country):
-        combined_name = f"{self.name} {other_country.name}"
-        combined_population = self.population + other_country.population
+    def add(self, other):
+        combined_name = f"{self.name} and {other.name}"
+        combined_population = self.population + other.population
         combined_country = Country(combined_name, combined_population)
         return combined_country
 
