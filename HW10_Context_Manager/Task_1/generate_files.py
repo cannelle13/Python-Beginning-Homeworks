@@ -1,7 +1,7 @@
 import random
 import string
 
-alphabet = list(string.ascii_uppercase)
+alphabet = string.ascii_uppercase
 summary_data = []
 
 for letter in alphabet:
