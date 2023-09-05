@@ -13,14 +13,15 @@ class FastFood(Restaurant):
         self.drive_thru = drive_thru
 
     def order(self, dish_name, quantity):
-        if dish_name in self.menu and self.menu[dish_name]["quantity"] >= quantity:
-            total_cost = self.menu[dish_name]["price"] * quantity
-            self.menu[dish_name]["quantity"] -= quantity
-            return total_cost
-        elif dish_name not in self.menu:
+        if dish_name not in self.menu:
             return "Dish not available"
-        else:
+
+        if self.menu[dish_name]["quantity"] < quantity:
             return "Requested quantity not available"
+
+        total_cost = self.menu[dish_name]["price"] * quantity
+        self.menu[dish_name]["quantity"] -= quantity
+        return total_cost
 
 
 menu = {
