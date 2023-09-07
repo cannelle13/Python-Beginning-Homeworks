@@ -60,7 +60,6 @@ DATABASE_USER = os.getenv("DATABASE_USER")
 DATABASE_PASSWORD = os.getenv("DATABASE_PASSWORD")
 
 # Make a connection to DB
-
 DATABASE_URI = "postgresql://{user}:{password}@{host}:{port}/{database}"
 
 engine = create_engine(
@@ -74,11 +73,9 @@ engine = create_engine(
 )
 
 #  Join our connection with our class
-
 Base.metadata.create_all(engine)
 
 # Open session to DB import sessionmaker
-
 Session = sessionmaker(bind=engine)
 
 session = Session()
