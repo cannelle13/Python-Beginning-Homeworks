@@ -1,6 +1,10 @@
 #### HW: SQL
 
-Write SQL queries for table creation for the data model that you created for prev homework (Airbnb model)
-Write 3 rows (using INSERT queries) for each table in the data model
+1. Write SQL queries for table creation for the data model that you created for prev homework (Airbnb model)
 
-Analytic queries are in gueries.txt file.
+2. Write 3 rows (using INSERT queries) for each table in the data model
+
+3. Create next analytic queries:
+a. Find a user who had the biggest amount of reservations. Return username and user_id
+b. (Optional) Find a host who earned the biggest amount of money for the last month. Return hostname and host_id
+c. (Optional) Find a host with the best average rating. Return hostname and host_id
